@@ -24,7 +24,7 @@ func main() {
 		panic(err)
 	}
 
-	versions := []string{"1.15", "1.14", "1.13", "1.12"}
+	versions := []string{"1.17", "1.16", "1.15", "1.14", "1.13"}
 	validators := make([]validator, len(versions))
 	for i, version := range versions {
 		resolver, err := kubernetes.NewResolver(version)
