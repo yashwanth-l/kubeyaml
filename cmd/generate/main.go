@@ -5,7 +5,7 @@ import (
 	"html/template"
 	"os"
 
-	"github.com/chuckha/kubeyaml/internal/kubernetes"
+	"github.com/langesven/kubeyaml/internal/kubernetes"
 )
 
 const (

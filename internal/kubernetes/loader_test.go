@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/chuckha/kubeyaml/internal/kubernetes"
+	"github.com/langesven/kubeyaml/internal/kubernetes"
 )
 
 type badReader struct{}

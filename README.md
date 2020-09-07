@@ -1,5 +1,9 @@
 # kubeyaml
 
+This is a fork of https://github.com/chuckha/kubeyaml branch `v2`. No development will happen here, this is just intended to fix building the code.
+
+As the references inside the `v2` branch reference the master branch this broke building the golang version of this code.
+
 ## Webserver
 
 ### Docker
