@@ -18,11 +18,13 @@ func (s *StaticFiles) %s() []byte {
 // Run this from the top level dir
 func main() {
 	releases := map[string]string{
-		"OneThirteen": "1.13",
-		"OneFourteen": "1.14",
-		"OneFifteen":  "1.15",
-		"OneSixteen":  "1.16",
-		"OneSeventeen": "1.17",
+		"OneEighteen":    "1.18",
+		"OneNinteen":     "1.19",
+		"OneTwenty":      "1.20",
+		"OneTwentyOne":   "1.21",
+		"OneTwentyTwo":   "1.22",
+		"OneTwentyThree": "1.23",
+		"OneTwentyFour":  "1.24",
 	}
 	urlFmt := "https://raw.githubusercontent.com/kubernetes/kubernetes/release-%s/api/openapi-spec/swagger.json"
 

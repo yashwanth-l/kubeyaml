@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/langesven/kubeyaml/internal/kubernetes"
+	"github.com/yashwanth-l/kubeyaml/internal/kubernetes"
 )
 
 /*
@@ -50,7 +50,7 @@ func main() {
 func run(in io.Reader, out io.Writer, args ...string) error {
 	opts := &options{}
 	validate := flag.NewFlagSet("validate", flag.ExitOnError)
-	opts.versions = validate.String("versions", "1.17,1.16,1.15,1.14,1.13", "comma separated list of kubernetes versions to validate against")
+	opts.versions = validate.String("versions", "1.24,1.23,1.22,1.21,1.20,1.19,1.18", "comma separated list of kubernetes versions to validate against")
 	opts.silent = validate.Bool("silent", false, "if true, kubeyaml will not print any output")
 	validate.Parse(args)
 	err := opts.Validate()

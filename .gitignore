@@ -1,2 +1,5 @@
 vendor
 node_modules
+kubeyaml
+kubeyaml-server
+.DS_Store

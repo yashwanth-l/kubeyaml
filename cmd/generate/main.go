@@ -5,11 +5,11 @@ import (
 	"html/template"
 	"os"
 
-	"github.com/langesven/kubeyaml/internal/kubernetes"
+	"github.com/yashwanth-l/kubeyaml/internal/kubernetes"
 )
 
 const (
-	defaultActiveTab = "1.15"
+	defaultActiveTab = "1.21"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 		panic(err)
 	}
 
-	versions := []string{"1.17", "1.16", "1.15", "1.14", "1.13"}
+	versions := []string{"1.24", "1.23", "1.22", "1.21", "1.20", "1.19", "1.18"}
 	validators := make([]validator, len(versions))
 	for i, version := range versions {
 		resolver, err := kubernetes.NewResolver(version)
